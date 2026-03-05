@@ -74,6 +74,90 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #eef3ff 0%, #f7f9ff 100%);
+  border: 1px solid #d9e2ff;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #283593;
+}
+
+.participants-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #374151;
+}
+
+.participants-list li {
+  margin-bottom: 4px;
+}
+
+.participant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #d6ddf7;
+}
+
+.participant-row:last-child {
+  border-bottom: none;
+}
+
+.participant-row span {
+  word-break: break-word;
+}
+
+.delete-participant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #f3c6c6;
+  border-radius: 50%;
+  background-color: #fff4f4;
+  color: #c62828;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.delete-participant-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.delete-participant-btn:hover {
+  background-color: #ffe5e5;
+  border-color: #e99b9b;
+  transform: translateY(-1px);
+}
+
+.delete-participant-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0;
+}
+
+.empty-participants {
+  list-style: none;
+  color: #6b7280;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
